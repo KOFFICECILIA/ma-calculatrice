@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link css&bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="table">
+            <div class="ecran">
+                <p class="ecrans">0</p>
+            </div>
+            <div class="row lign">
+                <button type="button" value="1" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">1</button>
+                <button type="button" value="2" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">2</button>
+                <button type="button" value="3" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns" >3</button>
+                <button type="button" value="+" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">+</button>
+                <button type="button" value="4" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">4</button>
+                <button type="button" value="5" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">5</button>
+                <button type="button" value="6" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">6</button>
+                <button type="button" value="-" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">-</button>
+                <button type="button" value="7" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">7</button>
+                <button type="button" value="8" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">8</button>
+                <button type="button" value="9" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">9</button>
+                <button type="button" value="*" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">*</button>
+                <button type="button" value="AC" onClick="screen.innerHTML =''" class="btns1">AC</button>
+                <button type="button" value="=" onclick="screen.innerHTML = eval(screen.textContent)" class="btns2">=</button>
+                <button type="button" value="0" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">0</button>
+                <button type="button" value="/" onclick="(function(){screen.innerHTML += this.value}).call(this)" class="btns">/</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
